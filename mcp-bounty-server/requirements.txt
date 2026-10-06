@@ -1,0 +1,4 @@
+# MCP SDK for Python — required for the bounty-platforms MCP server
+# Install: pip install mcp
+# Or run: bash mcp-bounty-server/setup-mcp.sh
+mcp>=1.0.0

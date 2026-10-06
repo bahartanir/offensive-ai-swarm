@@ -1,0 +1,15 @@
+# Output artefacts — never commit multi-hundred-megabyte DBs.
+data/
+*.db
+*.db-wal
+*.db-shm
+*.faiss
+*.faiss.tmp
+
+# Local repo-level overrides.
+config.local.yaml
+repos.local.yaml
+
+__pycache__/
+*.pyc
+.venv/

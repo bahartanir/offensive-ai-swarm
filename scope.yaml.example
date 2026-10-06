@@ -1,0 +1,48 @@
+program: "Example Bug Bounty Program"
+platform: hackerone
+url: "https://hackerone.com/example"
+last_updated: "2026-03-31"
+
+in_scope:
+  - asset: "*.example.com"
+    type: wildcard_domain
+    eligible: true
+    tier: "primary"
+  - asset: "api.example.com"
+    type: url
+    eligible: true
+    tier: "primary"
+  - asset: "mobile-api.example.com"
+    type: url
+    eligible: true
+    tier: "secondary"
+
+out_of_scope:
+  - asset: "blog.example.com"
+    type: url
+    reason: "Third-party hosted"
+  - asset: "*.staging.example.com"
+    type: wildcard_domain
+    reason: "Internal staging"
+  - asset: "status.example.com"
+    type: url
+    reason: "Third-party status page"
+
+notes:
+  - "No DoS/DDoS testing"
+  - "No social engineering"
+  - "No physical testing"
+  - "Rate limit: 100 requests/second max"
+  - "Report to platform, not directly to security team"
+  - "Safe harbor: Yes, per policy"
+
+bounty_range:
+  critical: "$5000-$25000"
+  high: "$2500-$5000"
+  medium: "$500-$2500"
+  low: "$100-$500"
+
+response_targets:
+  first_response: "1 business day"
+  triage: "5 business days"
+  bounty: "10 business days"

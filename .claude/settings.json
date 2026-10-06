@@ -1,0 +1,173 @@
+{
+  "statusLine": {
+    "type": "command",
+    "command": "bash $CLAUDE_PROJECT_DIR/tools/pentest-statusline.sh"
+  },
+  "hooks": {
+    "SubagentStop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "uv run python3 $CLAUDE_PROJECT_DIR/tools/cost_hook.py",
+            "async": true
+          },
+          {
+            "type": "command",
+            "command": "uv run python3 $CLAUDE_PROJECT_DIR/tools/chain_pressure_hook.py",
+            "timeout": 5,
+            "statusMessage": "Scanning findings for chain-pressure..."
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "uv run python3 $CLAUDE_PROJECT_DIR/tools/cost_hook.py",
+            "async": true
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '{\"hookSpecificOutput\":{\"hookEventName\":\"SessionStart\",\"additionalContext\":\"Bug bounty workspace active. Commands: /status /hunt /surface /resume /triage /chain /autopilot. Check scope FIRST.\"}}'",
+            "timeout": 5,
+            "statusMessage": "Loading bug bounty workspace..."
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "uv run python3 $CLAUDE_PROJECT_DIR/tools/scope_hook.py",
+            "timeout": 5,
+            "statusMessage": "Checking scope..."
+          }
+        ]
+      },
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "uv run python3 $CLAUDE_PROJECT_DIR/tools/file_path_guard.py",
+            "timeout": 3,
+            "statusMessage": "Verifying referenced files..."
+          },
+          {
+            "type": "command",
+            "command": "uv run python3 $CLAUDE_PROJECT_DIR/tools/cvss_version_guard.py",
+            "timeout": 3,
+            "statusMessage": "Checking CVSS version..."
+          },
+          {
+            "type": "command",
+            "command": "uv run python3 $CLAUDE_PROJECT_DIR/tools/validity_guard.py",
+            "timeout": 3,
+            "statusMessage": "Scanning draft for never-submit signals..."
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "jq -r '.tool_input.command // empty' | { read -r cmd; if echo \"$cmd\" | grep -qE '^(curl|httpx|nuclei|ffuf|nmap|sqlmap|subfinder|katana|feroxbuster|amass|masscan|nikto) '; then uv run python3 \"$CLAUDE_PROJECT_DIR/tools/cost_hook.py\" 2>/dev/null; fi; }",
+            "timeout": 3,
+            "async": true
+          }
+        ]
+      }
+    ]
+  },
+  "permissions": {
+    "allow": [
+      "Bash(nmap:*)",
+      "Bash(httpx:*)",
+      "Bash(subfinder:*)",
+      "Bash(nuclei:*)",
+      "Bash(ffuf:*)",
+      "Bash(katana:*)",
+      "Bash(curl:*)",
+      "Bash(uv run python3:*)",
+      "Bash(python3 $CLAUDE_PROJECT_DIR/tools/*)",
+      "Bash(python3 tools/*)",
+      "Bash(dig:*)",
+      "Bash(whois:*)",
+      "Bash(host:*)",
+      "Bash(wafw00f:*)",
+      "Bash(testssl*)",
+      "Bash(nikto:*)",
+      "Bash(wpscan:*)",
+      "Bash(arjun:*)",
+      "Bash(gau:*)",
+      "Bash(waybackurls:*)",
+      "Bash(subjack:*)",
+      "Bash(feroxbuster:*)",
+      "Bash(amass:*)",
+      "Bash(masscan:*)",
+      "Bash(rustscan:*)",
+      "Bash(gowitness:*)",
+      "Bash(jwt_tool:*)",
+      "Bash(php:*)",
+      "Bash(psalm:*)",
+      "Bash(phpstan:*)",
+      "Bash(composer:*)",
+      "Bash(phpggc:*)",
+      "Bash(semgrep:*)",
+      "Bash(cppcheck:*)",
+      "Bash(jq:*)",
+      "Bash(grep:*)",
+      "Bash(sort:*)",
+      "Bash(uniq:*)",
+      "Bash(wc:*)",
+      "Bash(cat:*)",
+      "Bash(head:*)",
+      "Bash(tail:*)",
+      "Bash(mkdir:*)",
+      "Bash(ls:*)",
+      "Bash(git:*)",
+      "Bash(gh:*)",
+      "Read(*)",
+      "Write(recon/*)",
+      "Write(scans/*)",
+      "Write(js-analysis/*)",
+      "Write(poc/*)",
+      "Write(reports/*)",
+      "Write(findings.json)",
+      "Write(.scope.txt)",
+      "Write(scope.yaml)",
+      "Write(policy.md)",
+      "Write(hacktivity.md)",
+      "Write(ATTACK_SURFACE_RANKING.md)",
+      "Write(TRIAGE_REPORT.md)",
+      "Write(BRAIN.md)",
+      "Write(cost-tracking.json)",
+      "Write(sast-work/*)",
+      "Write(sast-rankings.json)",
+      "Write(findings/sast/*)",
+      "Write(poc/sast/*)",
+      "Edit(*)"
+    ],
+    "deny": [
+      "Bash(rm -rf /)",
+      "Bash(rm -rf ~)",
+      "Bash(> /dev/sd*)",
+      "Bash(dd if=*of=/dev/*)"
+    ]
+  }
+}

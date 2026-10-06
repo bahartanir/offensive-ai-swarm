@@ -1,0 +1,12 @@
+# URLs that appear in repos.yaml but should be skipped during ingestion.
+# Format matches repos.yaml (plain URL strings or {url: ...} dicts).
+# The builder loads this automatically; use --no-skip-list to ignore.
+repos:
+  # Verified empty on github (git ls-remote returns no refs).
+  - https://github.com/ctfs/write-ups-2012.git
+  # Previously surfaced as skip candidates — keep if they've been re-verified
+  # as not worth the clone. Remove from this list to re-enable.
+  - https://github.com/ctfs/write-ups-2014.git
+  - https://github.com/ctfs/write-ups-2015.git
+  - https://github.com/ctfs/write-ups-2016.git
+  - https://github.com/p4-team/ctf.git

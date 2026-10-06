@@ -1,0 +1,174 @@
+# GitHub repos to index for CTF writeups and bug bounty reports
+repos:
+  # --- CTF writeup archives ---
+  - url: https://github.com/ctfs/write-ups-2012.git
+  - url: https://github.com/ctfs/write-ups-2013.git
+  - url: https://github.com/ctfs/write-ups-2014.git
+  - url: https://github.com/ctfs/write-ups-2015.git
+  - url: https://github.com/ctfs/write-ups-2016.git
+  - url: https://github.com/ctfs/write-ups-2017.git
+  - url: https://github.com/ctfs/write-ups-2018.git
+  - url: https://github.com/sajjadium/ctf-archives.git
+  - url: https://github.com/ctf-wiki/ctf-wiki.git
+
+  # --- CTF team writeups ---
+  - url: https://github.com/p4-team/ctf.git
+  - url: https://github.com/bl4de/ctf.git
+  - url: https://github.com/perfectblue/ctf-writeups.git
+  - url: https://github.com/ret2jazzy/CTF-writeups.git
+  - url: https://github.com/Super-Guesser/ctf.git
+  - url: https://github.com/C4T-BuT-S4D/bricsctf-2023-stage1.git
+  - url: https://github.com/C4T-BuT-S4D/bricsctf-2024-quals.git
+  - url: https://github.com/maple3142/My-CTF-Challenges.git
+  - url: https://github.com/TeamGreyFang/CTF-Writeups.git
+  - url: https://github.com/cscosu/ctf-writeups.git
+  - url: https://github.com/BYU-CTF-group/writeups.git
+  - url: https://github.com/4n86rakam1/writeup.git
+  - url: https://github.com/bsempir0x65/CTF_Writeups.git
+  - url: https://github.com/pwning/public-writeup.git
+  - url: https://github.com/0e85dc6eaf/CTF-Writeups.git
+  - url: https://github.com/Gallopsled/pwntools-write-ups.git
+  - url: https://github.com/gynvael/stream-en.git
+  - url: https://github.com/koczkatamas/gctf19.git
+  - url: https://github.com/Dvd848/CTFs.git
+  - url: https://github.com/pcw109550/write-up.git
+  - url: https://github.com/PDKT-Team/ctf.git
+  - url: https://github.com/hoppersroppers/ctf.git
+  - url: https://github.com/pberba/ctf-solutions.git
+  - url: https://github.com/CSecIITB/ctf-writeups.git
+  - url: https://github.com/AnisBoss/CTFs.git
+  - url: https://github.com/ENOFLAG/writeups.git
+  - url: https://github.com/mzfr/vulnhub-writeups.git
+  - url: https://github.com/Crypto-Cat/CTF.git
+  - url: https://github.com/Team-Eur3kA/Writeups.git
+  - url: https://github.com/r3kapig/writeup.git
+
+  # --- Competition-specific challenge repos ---
+  - url: https://github.com/google/google-ctf.git
+  - url: https://github.com/sixstars/starctf2018.git
+  - url: https://github.com/sixstars/starctf2019.git
+  - url: https://github.com/SECCON/Beginners_CTF_2022.git
+  - url: https://github.com/SECCON/SECCON2022_online_CTF.git
+  - url: https://github.com/ImaginaryCTF/ImaginaryCTF-2023-Challenges.git
+  - url: https://github.com/ImaginaryCTF/ImaginaryCTF-2024-Challenges.git
+  - url: https://github.com/fuzzland/blazctf-2024.git
+  - url: https://github.com/sigpwny/UIUCTF-2023-Public.git
+  - url: https://github.com/chaitin/Real-World-CTF-2019-Quals-Attachment.git
+  - url: https://github.com/osirislab/CSAW-CTF-2019-Quals.git
+  - url: https://github.com/tsg-ut/tsgctf.git
+  - url: https://github.com/TokyoWesterns/ctf2019.git
+  - url: https://github.com/bluepichu/ctf-challenges.git
+
+  # --- Bug bounty reports and writeups ---
+  - url: https://github.com/reddelexc/hackerone-reports.git
+  - url: https://github.com/alexbieber/Bug_Bounty_writeups.git
+  - url: https://github.com/devanshbatham/Awesome-Bugbounty-Writeups.git
+  - url: https://github.com/ngalongc/bug-bounty-reference.git
+  - url: https://github.com/djadmin/awesome-bug-bounty.git
+  - url: https://github.com/KathanP19/HowToHunt.git
+  - url: https://github.com/EdOverflow/bugbounty-cheatsheet.git
+  - url: https://github.com/vavkamil/awesome-bugbounty-tools.git
+  - url: https://github.com/botesjuan/Burp-Suite-Certified-Practitioner-Exam-Study.git
+  - url: https://github.com/CyberSecurityUP/OSCE3-Complete-Guide.git
+  # Real-world bug bounty writeup collections (added 2026-04-10)
+  - url: https://github.com/daffainfo/AllAboutBugBounty.git
+  - url: https://github.com/Voorivex/pentest-guide.git
+  - url: https://github.com/sehno/Bug-bounty.git
+  - url: https://github.com/Mehdi0x90/Web_Hacking.git
+  - url: https://github.com/1ndianl33t/Bug-Bounty-Roadmaps.git
+  - url: https://github.com/elyeandre/HackingBooks.git
+  - url: https://github.com/akr3ch/BugBountyBooks.git
+  - url: https://github.com/nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters.git
+  - url: https://github.com/sushiwushi/bug-bounty-dorks.git
+  - url: https://github.com/m4ll0k/BBTz.git
+  - url: https://github.com/Anugrahsr/Awesome-web3-Security.git
+  - url: https://github.com/HolyBugx/HolyTips.git
+  # Disclosed vulnerability databases and research aggregators
+  - url: https://github.com/projectdiscovery/nuclei-templates.git
+  - url: https://github.com/swisskyrepo/InternalAllTheThings.git
+  - url: https://github.com/HackTricks-wiki/hacktricks.git
+  - url: https://github.com/HackTricks-wiki/hacktricks-cloud.git
+  - url: https://github.com/disclose/diodb.git
+  - url: https://github.com/aldaor/HackerOneReports.git
+  - url: https://github.com/insecrez/Bug-bounty-Writeups.git
+  - url: https://github.com/fransr/bountyplz.git
+  # Vendor- and platform-specific bug bounty writeup collections
+  - url: https://github.com/xdavidhu/awesome-google-vrp-writeups.git
+  - url: https://github.com/sayan011/Immunefi-bug-bounty-writeups-list.git
+  - url: https://github.com/jaiswalakshansh/Facebook-BugBounty-Writeups.git
+  - url: https://github.com/B3nac/Android-Reports-and-Resources.git
+  # Methodology, tips, and assessment knowledge
+  - url: https://github.com/KingOfBugbounty/KingOfBugBountyTips.git
+  - url: https://github.com/xalgord/Massive-Web-Application-Penetration-Testing-Bug-Bounty-Notes.git
+  - url: https://github.com/tuhin1729/Bug-Bounty-Methodology.git
+  - url: https://github.com/dsopas/assessment-mindset.git
+  # Real-world subdomain takeover and asset hijacking knowledge
+  - url: https://github.com/EdOverflow/can-i-take-over-xyz.git
+  - url: https://github.com/punk-security/dnsReaper.git
+  # Real-world recon and methodology references (jhaddix/tbhm already in OWASP section)
+  - url: https://github.com/six2dez/reconftw.git
+  - url: https://github.com/yogeshojha/rengine.git
+  # High-volume real-world exploit and writeup archives (added 2026-04-10 round 2)
+  # Note: offensive-security/exploitdb on GitHub is an archived stub README —
+  # the real 30k+ exploit archive now lives on GitLab.
+  - url: https://gitlab.com/exploit-database/exploitdb.git
+  - url: https://github.com/kangvcar/Hacking-Write-ups.git
+  - url: https://github.com/codebygk/hackerone-bug-bounty-reports.git
+  - url: https://github.com/ajaysenr/HackerOne-Disclosed-Reports.git
+  - url: https://github.com/jdgregson/Disclosures.git
+
+  # --- XSS-specific ---
+  - url: https://github.com/cure53/DOMPurify.git
+  - url: https://github.com/portswigger/xss-cheatsheet-data.git
+  - url: https://github.com/terjanq/Tiny-XSS-Payloads.git
+  - url: https://github.com/w181496/Web-CTF-Cheatsheet.git
+  - url: https://github.com/orangetw/My-CTF-Web-Challenges.git
+  - url: https://github.com/nccgroup/CrossSiteContentHijacking.git
+  - url: https://github.com/NytroRST/XSSFuzzer.git
+  - url: https://github.com/cure53/HTTPLeaks.git
+  - url: https://github.com/s0md3v/AwesomeXSS.git
+  - url: https://github.com/RenwaX23/XSS-Payloads.git
+  - url: https://github.com/BlackFan/client-side-prototype-pollution.git
+  - url: https://github.com/msrkp/PPScan.git
+  - url: https://github.com/0xInfection/Awesome-WAF.git
+
+  # --- Real-world vulnerability class research ---
+  - url: https://github.com/swisskyrepo/SSRFmap.git
+  - url: https://github.com/HoLyVieR/prototype-pollution-nsec18.git
+  - url: https://github.com/zigoo0/JSONBee.git
+  - url: https://github.com/ambionics/phpggc.git
+  - url: https://github.com/frohoff/ysoserial.git
+  - url: https://github.com/danielmiessler/SecLists.git
+
+  # --- Payload lists (payload-box org, formerly payloadbox) ---
+  - url: https://github.com/payload-box/xss-payload-list.git
+  - url: https://github.com/payload-box/sql-injection-payload-list.git
+  - url: https://github.com/payload-box/command-injection-payload-list.git
+  - url: https://github.com/payload-box/xxe-injection-payload-list.git
+  - url: https://github.com/payload-box/open-redirect-payload-list.git
+  - url: https://github.com/payload-box/ssti-advanced-payload-list.git
+  - url: https://github.com/payload-box/csv-injection-payload-list.git
+  - url: https://github.com/emadshanab/LFI-Payload-List.git
+  - url: https://github.com/swisskyrepo/PayloadsAllTheThings.git
+
+  # --- Security references and standards ---
+  - url: https://github.com/OWASP/wstg.git
+  - url: https://github.com/OWASP/CheatSheetSeries.git
+  - url: https://github.com/OWASP/owasp-mastg.git
+  - url: https://github.com/OWASP/NodeGoat.git
+  - url: https://github.com/OWASP/ASVS.git
+  - url: https://github.com/OWASP/API-Security.git
+  - url: https://github.com/OWASP/www-project-web-security-testing-guide.git
+  - url: https://github.com/OWASP/OWASP-Testing-Guide-v5.git
+  - url: https://github.com/jdonsec/AllThingsSSRF.git
+  - url: https://github.com/infosecn1nja/Red-Teaming-Toolkit.git
+  - url: https://github.com/jhaddix/tbhm.git
+
+  # --- Tools and resources ---
+  - url: https://github.com/zardus/ctf-tools.git
+  - url: https://github.com/apsdehal/awesome-ctf.git
+  - url: https://github.com/osirislab/Hack-Night.git
+  - url: https://github.com/LiveOverflow/liveoverflow_youtube.git
+  - url: https://github.com/XiphosResearch/exploits.git
+  - url: https://github.com/phra/PEzor.git
+  - url: https://github.com/AlessandroZ/BeRoot.git

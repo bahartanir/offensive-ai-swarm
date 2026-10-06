@@ -1,0 +1,11 @@
+# MCP RAG server configuration
+data_dir: data
+notes_dir: ../../notes
+allowed_domains: []  # empty = all domains allowed
+embedding_model: all-MiniLM-L6-v2
+host_allowlist:
+  - github.com
+  - gitlab.com
+max_file_size_bytes: 10485760  # 10MB
+clone_timeout_seconds: 300
+max_repo_size_mb: 1000  # reject mega-repos (sajjadium/ctf-archives = 34 GB, SecLists = 3 GB)

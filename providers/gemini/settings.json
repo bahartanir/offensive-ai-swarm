@@ -1,0 +1,22 @@
+{
+  "mcpServers": {
+    "bounty-platforms": {
+      "command": "uv",
+      "args": [
+        "run",
+        "--with",
+        "mcp",
+        "../../mcp-bounty-server/server.py"
+      ]
+    },
+    "writeup-search": {
+      "command": "uv",
+      "args": [
+        "run",
+        "--with",
+        "mcp",
+        "../../mcp-writeup-server/server.py"
+      ]
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "_NOTE": "This file is NOT loaded by Claude Code. Hooks live in .claude/settings.json under the 'hooks' key. This file is kept as documentation only.",
+  "_SEE": ".claude/settings.json",
+  "_ACTIVE_HOOKS": {
+    "SessionStart": "Prints available commands on session start",
+    "PreToolUse:Bash": "Scope check — blocks requests to out-of-scope targets",
+    "PostToolUse:Bash": "Cost tracking for security tool invocations",
+    "SubagentStop": "Cost tracking when agents finish",
+    "Stop": "Cost tracking on session end"
+  }
+}

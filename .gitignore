@@ -1,0 +1,60 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# Environment & Secrets
+.env
+.env.*
+!.env.example
+*.secret
+secrets.json
+credentials.json
+*.pem
+*.key
+
+# Engagement Data (personal pentest artifacts — never commit)
+engagements/
+evidence/
+findings/
+recon/
+reports/drafts/
+reports/submitted/
+scans/
+*.jsonl
+session_state.md
+test_accounts.md
+submissions_log.md
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Databases (local state)
+*.db
+*.sqlite
+*.sqlite3
+!db/schema.sql
+
+# Logs
+*.log
+logs/
+
+# Cache
+.cache/
+cache/

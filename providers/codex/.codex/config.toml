@@ -1,0 +1,9 @@
+[mcp_servers.bounty-platforms]
+command = "uv"
+args = ["run", "--with", "mcp", "../../mcp-bounty-server/server.py"]
+env_vars = ["HACKERONE_USERNAME", "HACKERONE_TOKEN", "HACKERONE_EMAIL_ALIAS", "H1_API_KEY", "BUGCROWD_USERNAME", "BUGCROWD_EMAIL", "BUGCROWD_EMAIL_ALIAS", "BUGCROWD_PASSWORD", "BUGCROWD_TOTP_SECRET", "BUGCROWD_TOKEN", "INTIGRITI_USERNAME", "INTIGRITI_TOKEN", "INTIGRITI_SPA_COOKIE", "INTIGRITI_EMAIL_ALIAS", "YESWEHACK_EMAIL", "YESWEHACK_TOKEN"]
+
+[mcp_servers.writeup-search]
+command = "uv"
+args = ["run", "--with", "mcp", "../../mcp-writeup-server/server.py"]
+env_vars = ["WRITEUP_DB_DIR"]
